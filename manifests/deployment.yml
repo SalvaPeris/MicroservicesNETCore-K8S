@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: salvaperismicroservicesnetcoreks 
+  name: shoppingapi 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: salvaperismicroservicesnetcoreks
+      app: shoppingapi
   template:
     metadata:
       labels:
-        app: salvaperismicroservicesnetcoreks 
+        app: shoppingapi 
     spec:
       containers:
-        - name: salvaperismicroservicesnetcoreks 
-          image: templateapi.azurecr.io/salvaperismicroservicesnetcoreks
+        - name: shoppingapi 
+          image: templateapi.azurecr.io/shoppingapi
           ports:
           - containerPort: 80
