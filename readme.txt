@@ -1,3 +1,8 @@
+# Deploying NET Core Microservices to AKS and CI/CD with Azure DevOps
+
+
+This is the K8S Cheatsheet:
+
 K8S DASHBOARD
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
@@ -9,11 +14,12 @@ kubectl create clusterrolebinding dashboard-admin -n kubernetes-dashboard  --clu
 kubectl -n kubernetes-dashboard create token dashboard-admin
 
 Copy token
-
 kubectl proxy
 
-Navegar a http o https://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
+Navigate to http o https://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 
 
-MÁS INFO:
+MORE INFO:
 https://adamtheautomator.com/kubernetes-dashboard/
+
+[![Build Status](https://dev.azure.com/xpander-dev/Prueba/_apis/build/status%2FShopping.MVC?branchName=master)](https://dev.azure.com/xpander-dev/Prueba/_build/latest?definitionId=5&branchName=master)
