@@ -15,6 +15,5 @@ kubectl proxy
 Navegar a http o https://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 
 
-M¡S INFO:
-
+M√ÅS INFO:
 https://adamtheautomator.com/kubernetes-dashboard/
