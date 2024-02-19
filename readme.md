@@ -1,5 +1,7 @@
 # Deploying NET Core Microservices to AKS and CI/CD with Azure DevOps
 
+![R](https://github.com/SalvaPeris/MicroservicesNETCore-K8S/assets/79948536/2fa68bfa-a7c9-471a-bd05-9c1ed0137039)
+
 
 ## K8S Cheatsheet:
 
