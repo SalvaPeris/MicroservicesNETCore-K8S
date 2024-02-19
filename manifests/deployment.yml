@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: salvaperismicroservicesnetcoreks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: salvaperismicroservicesnetcoreks
+  template:
+    metadata:
+      labels:
+        app: salvaperismicroservicesnetcoreks 
+    spec:
+      containers:
+        - name: salvaperismicroservicesnetcoreks 
+          image: templateapi.azurecr.io/salvaperismicroservicesnetcoreks
+          ports:
+          - containerPort: 80
