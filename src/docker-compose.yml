@@ -2,16 +2,16 @@ version: '3.4'
 
 services:
   shopping.api:
-    image: ${DOCKER_REGISTRY-}shoppingapi
+    image: templateapi.azurecr.io/shoppingapi #${DOCKER_REGISTRY-}shoppingapi 
     build:
       context: .
       dockerfile: Shopping.API/Dockerfile
 
   shopping.client:
-    image: ${DOCKER_REGISTRY-}shoppingclient
+    image: templateapi.azurecr.io/shoppingclient #${DOCKER_REGISTRY-}shoppingclient
     build:
       context: .
       dockerfile: Shopping.Client/Dockerfile
 
   shopping.db:
-    image: mongo
+    image: templateapi.azurecr.io/mongo #mongo
